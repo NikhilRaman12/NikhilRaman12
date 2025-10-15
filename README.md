@@ -1,5 +1,5 @@
 # 👋 Hi, I'm Nikhil Raman  
-**Data Analyst | AI Contributor | AgriTech + AI | Open to Remote Roles**
+**Data Scientist | AI Contributor | AgriTech + AI | Open to Remote Roles**
 
 I'm a results-driven Data Analyst with 3+ years of experience in agri-tech research, data validation, and simulation modeling. I’ve led data-driven initiatives to evaluate crop and pest forecasting models, validate field trial data, and support business decisions with clear visual insights.
 
