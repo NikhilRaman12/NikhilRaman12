@@ -8,7 +8,7 @@ My work spans **Healthcare AI, Agriculture AI, Big Data Analytics, and LLM-based
 
 ---
 
-## 🔥 What I Do (2025 Focus)
+## 🔥 What I Do 
 
 - 🤖 **GenAI & LLM Systems** – RAG, Prompt Engineering, LLM Evaluation, Safety & Alignment  
 - 🧠 **Agentic AI** – Multi-agent decision systems, orchestration, autonomous pipelines  
