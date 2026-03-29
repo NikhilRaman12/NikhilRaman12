@@ -1,97 +1,111 @@
 # 👋 Hi, I'm Nikhil Raman
 
-🚀 **Data Scientist | AI/ML Engineer | GenAI & Agentic Systems Builder**  
-🌏 India | 🌐 Open to Global & Remote Roles  
+🚀 **GenAI Engineer | AI/ML Engineer | LLM Systems (RAG, Agents, Fine-Tuning)**  
+🌏 India | 🌐 Open to Global & Remote Opportunities  
 
-I build **end-to-end Machine Learning, GenAI, and Agentic AI systems** that convert complex, real-world data into **scalable, production-ready solutions**.  
-My work spans **Healthcare AI, Agriculture AI, Big Data Analytics, and LLM-based applications**.
+I build **end-to-end AI/ML and Generative AI systems**, focusing on **RAG pipelines, agent-based workflows, and fine-tuned LLMs** to solve real-world problems.
+
+With 3+ years of experience in **data analysis and IoT-driven agricultural systems**, I bring a strong foundation in data reliability, experimentation, and applied machine learning.
 
 ---
 
 ## 🔥 What I Do 
 
-- 🤖 **GenAI & LLM Systems** – RAG, Prompt Engineering, LLM Evaluation, Safety & Alignment  
-- 🧠 **Agentic AI** – Multi-agent decision systems, orchestration, autonomous pipelines  
-- 📊 **Machine Learning & Deep Learning** – ML pipelines, CNNs, regression, anomaly detection  
-- ⚙️ **Data Engineering & Big Data** – PySpark, real-time pipelines, ETL at scale  
-- 🚀 **MLOps & Deployment** – Docker, Kubernetes, FastAPI, CI/CD, Hugging Face  
+- 🤖 **GenAI & LLM Systems** – RAG pipelines, prompt engineering, LLM evaluation  
+- 🧠 **Agentic AI** – Multi-agent workflows and orchestration patterns  
+- 🧪 **LLM Fine-Tuning** – LoRA/PEFT-based instruction tuning  
+- 📊 **Machine Learning** – Regression, classification, anomaly detection  
+- ⚙️ **Data Processing** – Data cleaning, preprocessing, and analysis pipelines  
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Languages & Data**
-- Python, SQL, Pandas, NumPy, PySpark, SQLAlchemy  
+**Languages & Data**  
+Python, SQL, Pandas, NumPy, PySpark  
 
-**Machine Learning**
-- Scikit-learn, XGBoost, LightGBM, CatBoost  
-- Regression, Classification, Clustering, Anomaly Detection  
+**Machine Learning**  
+Scikit-learn, XGBoost  
+Regression, Classification, Clustering, Anomaly Detection  
 
-**Deep Learning**
-- PyTorch, TensorFlow, CNNs  
+**Deep Learning**  
+PyTorch, TensorFlow  
 
-**GenAI / LLMs**
-- LangChain, RAG, FAISS, Prompt Engineering  
-- LLM Evaluation, RLHF (conceptual), Ollama  
+**GenAI / LLMs**  
+LangChain, FAISS, ChromaDB  
+RAG Pipelines, Prompt Engineering  
+LoRA Fine-Tuning (PEFT), LLM Evaluation  
+Ollama (LLaMA/Mistral), HuggingFace  
 
-**Big Data & MLOps**
-- Apache Spark, Kafka  
-- Docker, Kubernetes, FastAPI, GitHub Actions  
+**Deployment & Tools**  
+Docker, FastAPI, Git, Hugging Face Spaces  
 
-**Visualization**
-- Tableau, Power BI, Streamlit, Plotly, Seaborn  
-
----
-
-## 🚀 Featured Projects (High Impact)
-
-### 🦷 Deep-Dent – Healthcare RAG Chatbot
-- LangChain-based **RAG system for dental care assistant AI**
-- Domain-grounded retrieval with hallucination control
-- **Tech:** Python, LangChain, FAISS, FastAPI
-
-### 🌍 FieldNexus Sentinel – Agentic AI Platform
-- Multi-agent AI system for climate, soil, rainfall, pest & yield intelligence
-- Autonomous agents for forecasting & decision support
-
-### 🧠 GroundTruth Copilot – Safety-Aware GenAI
-- Decision-support GenAI with structured prompting
-- Focused on safety, grounding & hallucination reduction
-
-### 🌾 Krishi AI – RAG Chatbot
-- Deployed RAG chatbot on Hugging Face Spaces
-- Real-time agricultural advisory system
-
-### 💳 Credit Card Fraud Detection
-- One-Class SVM for anomaly detection on imbalanced datasets
-
-### 🎬 Netflix & Spotify Big Data Analytics
-- 50+ GB data processed using PySpark ETL pipelines
+**Visualization**  
+Streamlit, Gradio, Tableau, Power BI  
 
 ---
 
-## 📈 Experience Snapshot
-- **Research Scientist (Crop Modeling)** – Fasal (3+ yrs)
-- **Freelance AI Contributor** – TELUS Digital, Soul AI
-- Experience in **LLM evaluation, RAG systems, ML pipelines, dashboards**
+## 🚀 Featured Projects
+
+### 🦷 Deep-Dent – Healthcare RAG Assistant
+- Built a **retrieval-augmented chatbot** for dental guidance  
+- Implemented document ingestion, embeddings, and vector search  
+- Improved response quality using **retrieval-based grounding**  
+- **Tech:** LangChain, FAISS, HuggingFace  
 
 ---
 
-## 📚 Research & Writing
-- 🧪 Published research in **Scopus-indexed journal**
-- ✍️ Write about **Data Science, AI & GenAI** on Medium
+### 🌾 GramSaathi AI – Agricultural RAG System
+- Developed a **domain-specific RAG assistant** for farmer queries  
+- Enabled contextual responses using **vector search + prompt-based retrieval**  
+- Focused on **agriculture knowledge access use cases**  
+
+---
+
+### 🧠 TinyLlama Fine-Tuning (LoRA/PEFT)
+- Fine-tuned a **lightweight LLM on Alpaca-style dataset (~1000 samples)**  
+- Implemented **LoRA-based parameter-efficient training on CPU setup**  
+- Evaluated using **perplexity (~3.3)** and analyzed generative metrics limitations  
+
+---
+
+### 🤖 ML-GateKeeper – Multi-Agent Workflow
+- Designed a **multi-agent pipeline** for structured AI task execution  
+- Implemented modular steps for **data processing and validation workflows**  
+- Explored **agent orchestration using LLM-based components**  
+
+---
+
+### 💳 Fraud Detection – One-Class SVM
+- Built anomaly detection system for **imbalanced financial data**  
+- Applied preprocessing, scaling, and evaluation techniques  
+
+---
+
+## 📈 Experience
+
+- **Research Scientist (Data Analysis & Modeling)** – Fasal (3+ years)  
+- **AI Rater / LLM Evaluation Contributor** – TELUS Digital  
+- **Freelance AI/ML Projects** – ML & GenAI applications  
+
+---
+
+## 📚 Writing & Community
+
+- ✍️ Writing on **AI, Data Science, and Generative AI** (Medium, Dev.to)  
+- 🏆 Participated in **Kaggle, MLH, and Devpost hackathons**  
 
 ---
 
 ## 🌐 Connect With Me
 
-- 🔗 LinkedIn: https://www.linkedin.com/in/nikhil-raman-k-448589201/
-- 🧑‍💻 GitHub: https://github.com/NikhilRaman12
-- ✍️ Medium: https://medium.com/@nikhilraman12_03
-- 🏆 Devpost: https://devpost.com/
-- 🎓 Google Skills: https://www.skills.google/public_profiles/455f48d2-27ef-45af-8efd-921ffa63e3f6
-- 🧠 LeetCode: https://leetcode.com/u/Nikhil_Raman/
+- 🔗 LinkedIn: https://www.linkedin.com/in/nikhil-raman-k-448589201/  
+- 🧑‍💻 GitHub: https://github.com/NikhilRaman12  
+- ✍️ Medium: https://medium.com/@nikhilraman12_03  
+- 🏆 Devpost: https://devpost.com/  
+- 🎓 Google Skills: https://www.skills.google/public_profiles/455f48d2-27ef-45af-8efd-921ffa63e3f6  
+- 🧠 LeetCode: https://leetcode.com/u/Nikhil_Raman/  
 
 ---
 
-⭐ *If you find my work useful, feel free to star ⭐ my repositories or connect with me!*
+⭐ *If you find my work useful, feel free to star repositories or connect with me!*
