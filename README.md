@@ -100,7 +100,8 @@ Streamlit, Gradio, Tableau, Power BI
 ## 🌐 Connect With Me
 
 - 🔗 LinkedIn: https://www.linkedin.com/in/nikhil-raman-k-448589201/  
-- 🧑‍💻 GitHub: https://github.com/NikhilRaman12  
+- 🧑‍💻 GitHub: https://github.com/NikhilRaman12
+-    Kaggle: https://www.kaggle.com/nikhilramank  
 - ✍️ Medium: https://medium.com/@nikhilraman12_03  
 - 🏆 Devpost: https://devpost.com/  
 - 🎓 Google Skills: https://www.skills.google/public_profiles/455f48d2-27ef-45af-8efd-921ffa63e3f6  
