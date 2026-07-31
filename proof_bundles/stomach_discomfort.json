@@ -1,0 +1,1 @@
+{"topic":"stomach_discomfort","status":"UNAVAILABLE","raw_api_response":null,"retrieved_chunk_ids":[],"sources":[],"vector_scores":[],"neo4j_traversal":[],"groq_generation":false,"validated_citations":[],"reason":"No source PDFs, configured retrieval backend, graph endpoint, or GROQ_API_KEY were available in this workspace."}

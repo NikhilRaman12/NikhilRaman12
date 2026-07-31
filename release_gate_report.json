@@ -1,0 +1,31 @@
+{
+  "git_commit": "HEAD (resolve with git rev-parse HEAD)",
+  "environment": "HF_SPACE",
+  "test_totals": {
+    "passed": 0,
+    "failed": 1,
+    "not_run": 4
+  },
+  "retrieval_evidence": {},
+  "groq_invocation_status": "NOT RUN: GROQ_API_KEY unavailable during build",
+  "citation_validation_results": "NOT RUN: no indexed evidence",
+  "multilingual_coverage": "NOT VERIFIED",
+  "safety_test_results": "NOT RUN: test collection failed because FastAPI is not installed in the supplied Python 3.14 environment",
+  "dependency_status": {
+    "groq": "NOT CONFIGURED",
+    "pgvector": "NOT CONFIGURED",
+    "milvus": "NOT CONFIGURED",
+    "neo4j": "NOT CONFIGURED"
+  },
+  "known_limitations": [
+    "The supplied workspace contained no MedicoBuddy source repository or PDFs.",
+    "External vector and graph services are unavailable with GROQ_API_KEY alone.",
+    "No deployment was performed."
+  ],
+  "proof_bundles": {
+    "headache": "UNAVAILABLE",
+    "cold": "UNAVAILABLE",
+    "stomach_discomfort": "UNAVAILABLE"
+  },
+  "decision": "NO_GO"
+}

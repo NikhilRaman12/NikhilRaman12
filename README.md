@@ -1,112 +1,43 @@
-# 👋 Hi, I'm Nikhil Raman
+# MedicoBuddy AI
 
-🚀 **GenAI Engineer | AI/ML Engineer | LLM Systems (RAG, Agents, Fine-Tuning)**  
-🌏 India | 🌐 Open to Global & Remote Opportunities  
+MedicoBuddy is a **health and wellness education** application for lower-risk adults with mild, short-duration concerns. It does not diagnose, prescribe, recommend medicine doses, alter treatment, or replace a clinician. Ayurveda content must be identified as traditional practice, emerging evidence, or established evidence and may only be returned when supported by retrieved evidence.
 
-I build **end-to-end AI/ML and Generative AI systems**, focusing on **RAG pipelines, agent-based workflows, and fine-tuned LLMs** to solve real-world problems.
+> **Release status: `NO_GO`.** This checkout contained no medical PDFs and no external service configuration. The application deliberately fails closed rather than returning template advice. See [`release_gate_report.json`](release_gate_report.json).
 
-With 3+ years of experience in **data analysis and IoT-driven agricultural systems**, I bring a strong foundation in data reliability, experimentation, and applied machine learning.
+## Implemented request boundary
 
----
+`Streamlit → FastAPI → deterministic safety triage → configured retrieval adapter → evidence validation → generation boundary → citation validation → streamed completion`
 
-## 🔥 What I Do 
+The API will not generate topic-specific content when retrieval is absent. The typed response includes the authoritative request ID, citations, graph paths, per-request metrics, and a safe error. Emergency/risk escalation happens before retrieval.
 
-- 🤖 **GenAI & LLM Systems** – RAG pipelines, prompt engineering, LLM evaluation  
-- 🧠 **Agentic AI** – Multi-agent workflows and orchestration patterns  
-- 🧪 **LLM Fine-Tuning** – LoRA/PEFT-based instruction tuning  
-- 📊 **Machine Learning** – Regression, classification, anomaly detection  
-- ⚙️ **Data Processing** – Data cleaning, preprocessing, and analysis pipelines  
+### Profiles
 
----
+| Profile | Active architecture | Honest limitation |
+|---|---|---|
+| `HF_SPACE` | FastAPI and Streamlit in one Docker container | With only `GROQ_API_KEY`, pgvector, Milvus, and Neo4j are `NOT CONFIGURED`; readiness is false. |
+| `FULL_STACK` | Compose definitions for API/UI, PostgreSQL/pgvector, Milvus, and Neo4j Community | Services must become reachable and evidence must be ingested before readiness or answers are possible. |
 
-## 🛠️ Tech Stack
+No HIPAA, medical-device, diagnostic, or clinical-validation claim is made.
 
-**Languages & Data**  
-Python, SQL, Pandas, NumPy, PySpark  
+## Run
 
-**Machine Learning**  
-Scikit-learn, XGBoost  
-Regression, Classification, Clustering, Anomaly Detection  
+```bash
+cp .env.example .env
+pip install '.[test]'
+uvicorn medicobuddy.api:app --port 8000
+streamlit run streamlit_app.py --server.port 7860
+```
 
-**Deep Learning**  
-PyTorch, TensorFlow  
+Or run the full topology with `docker compose up --build`. Re-index documents placed under `data/` using `python -m medicobuddy.ingest`. The report fails readiness for unreadable or zero-chunk documents. Persistent database volumes are defined in Compose.
 
-**GenAI / LLMs**  
-LangChain, FAISS, ChromaDB  
-RAG Pipelines, Prompt Engineering  
-LoRA Fine-Tuning (PEFT), LLM Evaluation  
-Ollama (LLaMA/Mistral), HuggingFace  
+Health endpoints are `/health/live`, `/health/ready`, and `/health/dependencies`; chat endpoints are `/v1/chat` and `/v1/chat/stream`. A `200` response from readiness is not itself success—the UI reads the JSON `ready` field.
 
-**Deployment & Tools**  
-Docker, FastAPI, Git, Hugging Face Spaces  
+## Security and operations
 
-**Visualization**  
-Streamlit, Gradio, Tableau, Power BI  
+Secrets are environment-only and `.env.example` contains no values. Logs use request IDs and never log prompts or keys. Inputs are bounded by Pydantic. Production operators should rotate credentials, put TLS/auth/rate limiting at an ingress, back up database volumes, run `pip-audit`, and validate licensed authoritative sources before enabling readiness.
 
----
+Rollback: deploy the preceding immutable image/commit, restore compatible database-volume snapshots, run readiness checks, then shift traffic. Never roll back an index independently of its application/schema version.
 
-## 🚀 Featured Projects
+## Missing launch gates
 
-### 🦷 Deep-Dent – Healthcare RAG Assistant
-- Built a **retrieval-augmented chatbot** for dental guidance  
-- Implemented document ingestion, embeddings, and vector search  
-- Improved response quality using **retrieval-based grounding**  
-- **Tech:** LangChain, FAISS, HuggingFace  
-
----
-
-### 🌾 GramSaathi AI – Agricultural RAG System
-- Developed a **domain-specific RAG assistant** for farmer queries  
-- Enabled contextual responses using **vector search + prompt-based retrieval**  
-- Focused on **agriculture knowledge access use cases**  
-
----
-
-### 🧠 TinyLlama Fine-Tuning (LoRA/PEFT)
-- Fine-tuned a **lightweight LLM on Alpaca-style dataset (~1000 samples)**  
-- Implemented **LoRA-based parameter-efficient training on CPU setup**  
-- Evaluated using **perplexity (~3.3)** and analyzed generative metrics limitations  
-
----
-
-### 🤖 ML-GateKeeper – Multi-Agent Workflow
-- Designed a **multi-agent pipeline** for structured AI task execution  
-- Implemented modular steps for **data processing and validation workflows**  
-- Explored **agent orchestration using LLM-based components**  
-
----
-
-### 💳 Fraud Detection – One-Class SVM
-- Built anomaly detection system for **imbalanced financial data**  
-- Applied preprocessing, scaling, and evaluation techniques  
-
----
-
-## 📈 Experience
-
-- **Research Scientist (Data Analysis & Modeling)** – Fasal (3+ years)  
-- **AI Rater / LLM Evaluation Contributor** – TELUS Digital  
-- **Freelance AI/ML Projects** – ML & GenAI applications  
-
----
-
-## 📚 Writing & Community
-
-- ✍️ Writing on **AI, Data Science, and Generative AI** (Medium, Dev.to)  
-- 🏆 Participated in **Kaggle, MLH, and Devpost hackathons**  
-
----
-
-## 🌐 Connect With Me
-
-- 🔗 LinkedIn: https://www.linkedin.com/in/nikhil-raman-k-448589201/  
-- 🧑‍💻 GitHub: https://github.com/NikhilRaman12
--    Kaggle: https://www.kaggle.com/nikhilramank  
-- ✍️ Medium: https://medium.com/@nikhilraman12_03  
-- 🏆 Devpost: https://devpost.com/  
-- 🎓 Google Skills: https://www.skills.google/public_profiles/455f48d2-27ef-45af-8efd-921ffa63e3f6  
-- 🧠 LeetCode: https://leetcode.com/u/Nikhil_Raman/  
-
----
-
-⭐ *If you find my work useful, feel free to star repositories or connect with me!*
+The original MedicoBuddy repository and its claimed 15 PDFs were not present and GitHub access was blocked in this environment. Consequently Qwen embedding execution, real database upserts, Neo4j provenance paths, Groq invocation, multilingual generation, browser validation, and three evidence proof bundles could not truthfully be completed. These are recorded as unavailable—not passed.
