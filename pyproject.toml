@@ -1,0 +1,19 @@
+[project]
+name = "medicobuddy-ai"
+version = "1.0.0"
+description = "Evidence-grounded health education GraphRAG service"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "fastapi==0.115.12", "uvicorn[standard]==0.34.2", "pydantic==2.11.4",
+  "pydantic-settings==2.9.1", "httpx==0.28.1", "streamlit==1.45.1",
+  "langgraph==0.4.7", "langchain-core==0.3.61", "langchain-text-splitters==0.3.8",
+  "langchain-groq==0.3.2", "sentence-transformers==4.1.0", "pypdf==5.5.0",
+  "psycopg[binary]==3.2.9", "pymilvus==2.5.8", "neo4j==5.28.1",
+  "python-json-logger==3.3.0", "langdetect==1.0.9"
+]
+[project.optional-dependencies]
+test = ["pytest==8.3.5", "pytest-asyncio==0.26.0", "ruff==0.11.10"]
+[tool.pytest.ini_options]
+testpaths=["tests"]
+[tool.ruff]
+line-length=100
